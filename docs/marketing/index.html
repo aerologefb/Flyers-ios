@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c79a3a">
+  <meta name="description" content="Flyers — press kit, marketing materials, and contact for the iOS eCrew companion app.">
+  <title>Press &amp; Media — Flyers</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <div class="logo">F</div>
+      <h1 class="brand">Flyers</h1>
+      <nav>
+        <a href="../">Home</a>
+        <a href="../legal/privacy-policy/">Privacy</a>
+        <a href="../legal/support/">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Press &amp; Media</h1>
+      <p class="meta">
+        Developer: Capt. Navneet Reddy (NAV-INT LLC) · Contact: <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a>
+      </p>
+
+      <h2>One-liner</h2>
+      <p>
+        <em>The crew companion for AIMS eCrew pilots and cabin crew. Roster, logbook, fatigue
+        tracker, layover map, and opt-in roster sharing with your colleagues — all on your iPhone,
+        all private.</em>
+      </p>
+
+      <h2>The app</h2>
+      <p>
+        Flyers is a native iOS 26 app that wraps the AIMS eCrew web portal — the scheduling system
+        used by ~150 airlines worldwide — in a fast, offline-first, privacy-first interface.
+      </p>
+      <p>
+        Currently shipping for Etihad Airways pilots. The architecture supports adding new
+        airlines as a config-only change once each tenant's portal is verified against live data.
+      </p>
+
+      <h3>Core features</h3>
+      <ul>
+        <li><strong>Roster</strong> — month view with block / duty / off / flight-day totals, date-range filter, jump-to-today.</li>
+        <li><strong>Flight detail</strong> — crew listing with heavy-crew pairing variations (A/B/C/D), great-circle route map, registration, aircraft type, load, layover hotel.</li>
+        <li><strong>Logbook</strong> — auto-built 12-month flight history with Aerolog-compatible export.</li>
+        <li><strong>Stats &amp; FTL</strong> — block, duty, and flight-time-limit totals across rolling windows.</li>
+        <li><strong>Expiry tracking</strong> — licences, medicals, recurrent training countdown.</li>
+        <li><strong>Fatigue tracker</strong> — daily sleep log with 7-day chart.</li>
+        <li><strong>Layover &amp; airport info</strong> — local time, weather, sunrise/sunset, hotel notes.</li>
+        <li><strong>Crew Mail</strong> — read-only mirror of your eCrew inbox.</li>
+        <li><strong>Live Activities</strong> — next-duty countdown on the Lock Screen and Dynamic Island.</li>
+      </ul>
+
+      <h3>Flyers Social (new)</h3>
+      <p>
+        Cross-airline opt-in roster sharing between Flyers users. Add friends by their public
+        <code>@handle</code>, accept or block as you choose, and hide individual events from
+        anyone you don't want to share with. End-to-end via Apple's CloudKit — no third-party
+        server, no analytics, no telemetry.
+      </p>
+      <p>
+        <strong>Flyers Pro</strong> — $2.99/month or $19.99/year (7-day free trial) — unlocks
+        unlimited friends, push updates when their roster changes, and per-event hiding.
+      </p>
+
+      <h2>Privacy posture</h2>
+      <p>
+        Flyers is built around a single principle: the Developer cannot read your data.
+      </p>
+      <ul>
+        <li>Credentials are stored only in the iOS Keychain on the user's device.</li>
+        <li>Roster and logbook data are cached locally via SwiftData.</li>
+        <li>Social features run on Apple's CloudKit; the Developer operates no server.</li>
+        <li>No analytics, no third-party SDKs, no telemetry, no advertising.</li>
+      </ul>
+      <p>
+        Full details: <a href="../legal/privacy-policy/">Privacy Policy</a>.
+      </p>
+
+      <h2>Pricing</h2>
+      <ul>
+        <li><strong>Free tier:</strong> all core features (roster, logbook, stats, fatigue, layover info, crew mail) plus read-only Flyers Social (claim a handle, accept up to 2 friend requests, view friends' shared rosters).</li>
+        <li><strong>Flyers Pro:</strong> $2.99/month or $19.99/year (7-day free trial). Unlocks sending unlimited friend requests, publishing your roster, push updates, and per-event hiding.</li>
+      </ul>
+
+      <h2>Technical</h2>
+      <ul>
+        <li>Native iOS 26+, Swift 6 strict concurrency, SwiftUI, Liquid Glass design system.</li>
+        <li>CloudKit for the Social subsystem; StoreKit 2 for subscriptions.</li>
+        <li>No third-party dependencies beyond Apple SDKs.</li>
+        <li>Source: closed; verification: pre-launch sandbox testing on real devices.</li>
+      </ul>
+
+      <h2>Press contact</h2>
+      <p>
+        For media or partnership enquiries:<br>
+        <strong>Capt. Navneet Reddy</strong><br>
+        <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a>
+      </p>
+    </main>
+
+    <footer class="site">
+      © 2026 NAV-INT LLC · <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a>
+    </footer>
+  </div>
+</body>
+</html>

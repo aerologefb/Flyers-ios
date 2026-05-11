@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c79a3a">
+  <meta name="description" content="Flyers iOS app — support and FAQ. Common questions, troubleshooting, and how to reach the developer.">
+  <title>Support — Flyers</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <div class="logo">F</div>
+      <h1 class="brand">Flyers</h1>
+      <nav>
+        <a href="../../">Home</a>
+        <a href="../privacy-policy/">Privacy</a>
+        <a href="../support/" class="active">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Support &amp; FAQ</h1>
+      <p class="meta">
+        Contact: <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> · Developer: Capt. Navneet Reddy
+      </p>
+
+      <p>
+        The fastest way to get help is to email <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> with:
+      </p>
+      <ol>
+        <li>The version + build number, shown at the top of the <strong>About</strong> screen (Hub tab → About).</li>
+        <li>Your device model and iOS version (Settings → General → About).</li>
+        <li>A description of what you tried, what you expected, and what you saw instead.</li>
+        <li>Screenshots if useful.</li>
+      </ol>
+      <p>Most replies arrive within <strong>2–3 business days</strong>.</p>
+
+      <hr>
+
+      <h2>FAQ</h2>
+
+      <h3>I forgot my password / I'm locked out of eCrew</h3>
+      <p>
+        Flyers does not control your airline's eCrew portal. Use the <strong>Forgot password</strong>
+        link on the login screen — Flyers will hand off to your airline's password reset flow.
+        If that fails, contact your airline's crew control or eCrew helpdesk.
+      </p>
+
+      <h3>My roster looks wrong</h3>
+      <p>
+        Flyers shows whatever your airline's eCrew portal returns. If a flight, layover, or time
+        is wrong in Flyers, <strong>first check the eCrew web portal in a browser</strong>. If the data is
+        wrong there, it's an issue for your airline's roster team. If it's correct on the web but
+        wrong in Flyers, email support with a screenshot of both.
+      </p>
+
+      <h3>My duty times look an hour off</h3>
+      <p>
+        Flyers fetches all times in UTC and converts to your selected display zone.
+        <strong>Hub → Settings → Time zone</strong> lets you pick between local, base, and UTC.
+        Make sure your iPhone's system time zone (Settings → General → Date &amp; Time) is set to
+        Automatic — the app uses this as the "local" reference.
+      </p>
+
+      <h3>Face ID isn't working</h3>
+      <p>
+        Hub → Settings → Security → toggle off and on. If still failing, sign out (Hub → Sign out)
+        and sign in once with your password — Flyers re-binds your credentials in the iOS Keychain.
+      </p>
+
+      <h3>My background sync isn't running</h3>
+      <p>
+        iOS schedules background refresh at its own discretion based on app usage and battery state.
+        There is no manual override Apple permits. Open Flyers manually and pull-to-refresh on the
+        Roster or Dashboard to force a fresh fetch.
+      </p>
+
+      <h3>Flyers Social — my friend can't find my handle</h3>
+      <ul>
+        <li>Confirm you're both signed into iCloud on your devices.</li>
+        <li>Confirm both of you have <strong>claimed a handle</strong> in the Friends tab.</li>
+        <li>Search is case-insensitive but spelling-exact — <code>nav_reddy</code> will not find <code>navreddy</code>.</li>
+        <li>If you previously toggled <strong>Settings → Flyers Social → Hide me from search</strong>, friends can't search for you.</li>
+      </ul>
+
+      <h3>Flyers Social — my friend's roster isn't updating</h3>
+      <p>
+        Your friend's roster is republished when <strong>their</strong> device performs a background
+        sync (roughly every few hours, controlled by iOS). The "Pull to refresh" gesture on your
+        view of their roster only refreshes the receive side; it doesn't force them to republish.
+      </p>
+
+      <h3>I subscribed to Flyers Pro but the paywall keeps appearing</h3>
+      <ul>
+        <li>Hub → Settings → Flyers Social → <strong>Restore purchases</strong>.</li>
+        <li>If still missing, confirm in Settings → Apple ID → Subscriptions that the Flyers Pro subscription is <strong>Active</strong> (not Expired or in Free Trial state). If it shows as Active and Flyers still doesn't see it, force-quit Flyers from the app switcher and reopen.</li>
+      </ul>
+
+      <h3>How do I cancel Flyers Pro?</h3>
+      <p>
+        Settings → Apple ID → Subscriptions → Flyers Pro → Cancel Subscription. Apple handles all
+        subscription billing — the Developer cannot cancel for you.
+      </p>
+
+      <h3>I want to delete all my Flyers data</h3>
+      <ul>
+        <li><strong>Local on-device data:</strong> sign out (Hub → Sign out), then uninstall the app.</li>
+        <li><strong>CloudKit / Flyers Social data:</strong> Hub → Settings → Flyers Social → <strong>Delete my Flyers Social data</strong>. This revokes shares with friends and deletes the records owned by your handle.</li>
+        <li><strong>Subscription:</strong> Settings → Apple ID → Subscriptions → cancel.</li>
+      </ul>
+
+      <h3>How do I report a bug?</h3>
+      <p>
+        Email <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> with the info at the top of
+        this page. Please include exact steps to reproduce — even a one-line "tap X, then Y" is
+        enormously useful.
+      </p>
+
+      <h3>How do I request a feature?</h3>
+      <p>Same email. Be specific about the use case.</p>
+
+      <hr>
+
+      <h2>Disclaimer</h2>
+      <p>
+        Flyers is a third-party companion app. It is not affiliated with, endorsed by, or supported
+        by your airline, AIMS International, or Apple. Use the app as a convenience layer over your
+        airline's official tools, not as a replacement for them.
+      </p>
+    </main>
+
+    <footer class="site">
+      © 2026 NAV-INT LLC · <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a>
+    </footer>
+  </div>
+</body>
+</html>
