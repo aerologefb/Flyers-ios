@@ -23,7 +23,7 @@
     <main>
       <h1 class="page-title">Privacy Policy</h1>
       <p class="meta">
-        Effective date: 12 May 2026 · Last updated: 12 May 2026
+        Effective date: 12 May 2026 · Last updated: 26 June 2026 · Version 3.0
       </p>
 
       <p>
@@ -36,8 +36,10 @@
       <p>
         <strong>Summary:</strong> Flyers is a personal companion app for airline crew. It runs
         on your device, talks only to your airline's eCrew portal and Apple's iCloud, and
-        collects no analytics. The Developer cannot read your credentials, your roster, or
-        your friend graph.
+        collects no analytics. The Developer cannot read your eCrew credentials or your
+        on-device roster cache. If you opt into Flyers Social, the roster events you publish
+        are stored in Apple's CloudKit Public Database and are intended to be visible only to
+        accepted friends in the app.
       </p>
 
       <hr>
@@ -106,32 +108,33 @@
         </thead>
         <tbody>
           <tr>
-            <td>Your public <code>@handle</code>, display name, and a private internal anchor <code>(airlineId, staffId)</code></td>
+            <td>Your public <code>@handle</code>, display name, and internal anchor <code>(airlineId, staffId)</code></td>
             <td>Public Database (<code>Handle</code> record)</td>
-            <td>The handle and display name are visible to other Flyers users. The <code>(airlineId, staffId)</code> pair is stored as a private, encrypted reference for impersonation protection only and is never displayed.</td>
+            <td>The handle and display name are visible to other Flyers users. The <code>(airlineId, staffId)</code> pair is used for impersonation protection and is not displayed in normal app UI.</td>
           </tr>
           <tr>
-            <td>Your friend requests, accepted edges, and users you block</td>
+            <td>Your friend requests, accepted edges, and any users you block</td>
             <td>Public Database (<code>FriendRequest</code>, <code>FriendEdge</code>, <code>Block</code>)</td>
-            <td>Visible only to the two parties of each record.</td>
+            <td>Used by the app to show requests, friendships and blocks.</td>
           </tr>
           <tr>
             <td>The roster events you publish to friends</td>
-            <td>Your <strong>Private</strong> Database (<code>SharedRoster</code>)</td>
-            <td>Visible only to friends you explicitly grant access to, via Apple's CKShare.</td>
+            <td>Public Database (<code>SharedRoster</code>)</td>
+            <td>Intended to be shown only to accepted friends listed in the record's <code>viewableBy</code> field. The app checks that list before rendering the roster.</td>
           </tr>
         </tbody>
       </table>
       <p>
         These records sit in Apple's CloudKit container
         (<code>iCloud.com.navintllc.flyers.ios</code>). Apple operates this infrastructure.
-        The Developer cannot read your <code>SharedRoster</code> payload — only the friends
-        you have explicitly accepted can.
+        Flyers does not run its own server. Because Flyers Social uses CloudKit Public Database
+        records for roster sharing, roster payloads are not a substitute for regulatory roster
+        systems and should be considered shared data once you opt into publishing.
       </p>
       <p>
         You can stop using Flyers Social at any time. <strong>Settings → Flyers Social →
-        Delete my Flyers Social data</strong> revokes every CKShare and deletes the records
-        owned by your handle.
+        Delete my Flyers Social data</strong> deletes your published <code>SharedRoster</code>
+        record and clears the local handle state on this device.
       </p>
 
       <h2>3. What Flyers does <em>not</em> collect</h2>
@@ -148,11 +151,24 @@
 
       <h2>4. Subscriptions and payments</h2>
       <p>
-        Flyers offers an optional <strong>Flyers Pro</strong> subscription
-        (<code>$2.99/month</code> or <code>$19.99/year</code> with a 7-day free trial). All
-        payments are processed by Apple. The Developer receives only Apple's standard payout
-        and does not see your card number, full name, or address. Manage or cancel your
-        subscription in <strong>Settings → Apple ID → Subscriptions</strong> on your iPhone.
+        Flyers offers an optional <strong>Flyers Pro</strong> subscription — an
+        <strong>auto-renewable subscription</strong> billed <strong>monthly
+        (<code>$2.99</code>) or yearly (<code>$19.99</code>)</strong>, with a
+        <strong>7-day free trial that now unlocks the full app</strong>. The subscription
+        renews automatically at the end of each period until you cancel.
+      </p>
+      <p>
+        All purchases are processed by <strong>Apple</strong> via StoreKit and the App Store.
+        Flyers receives only your <strong>entitlement status</strong> from StoreKit on your
+        device — that is, whether Pro is currently active. Flyers does <strong>not</strong>
+        collect, store, or transmit your payment details, card numbers, or Apple ID, and
+        <strong>no purchase data leaves your device beyond Apple's own processing</strong>.
+        The Developer receives only Apple's standard, aggregated payout and never sees your
+        card number, full name, or address.
+      </p>
+      <p>
+        Manage or cancel your subscription in <strong>Settings → Apple ID →
+        Subscriptions</strong> on your iPhone.
       </p>
 
       <h2>5. Your rights</h2>

@@ -39,7 +39,7 @@ Share your roster with the colleagues who matter to you — pilot, crew, friend,
 
 End-to-end via Apple's CloudKit. Your data never sits on a third-party server — only iCloud and your accepted friends can see it.
 
-Flyers Pro: $2.99/month or $19.99/year (with a 7-day free trial) unlocks unlimited friends, push updates when their roster changes, and per-event hiding.
+**Flyers Pro** unlocks the full Flyers app — your roster, flight detail, stats & FTL, expiry tracking, crew mail, fit-for-duty, pay estimate, fatigue tracker, logbook, and Flyers Social roster sharing. **$2.99/month or $19.99/year, with a 7-day free trial.** Cancel anytime. New in 3.0: a complete luminous redesign (ALTITUDE) and in-app Report Fit for Duty.
 
 **Privacy first**
 
