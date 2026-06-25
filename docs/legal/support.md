@@ -47,10 +47,14 @@ iOS schedules background refresh at its own discretion based on app usage and ba
 
 Your friend's roster is republished when **their** device performs a background sync (roughly every few hours, controlled by iOS). The "Pull to refresh" gesture on your view of their roster only refreshes the receive side; it doesn't force them to republish.
 
-### I subscribed to Flyers Pro but the paywall keeps appearing
+### What is Flyers Pro, and what happens after the free trial?
 
-- Hub → Settings → Flyers Social → **Restore purchases**.
-- If still missing, confirm in Settings → Apple ID → Subscriptions that the Flyers Pro subscription is **Active** (not Expired or in Free Trial state). If it shows as Active and Flyers still doesn't see it, force-quit Flyers from the app switcher and reopen.
+Flyers Pro unlocks the whole app — roster, flights, stats, expiry, crew mail, fit-for-duty, pay estimate, logbook, and cross-airline roster sharing. New users get a **7-day free trial**, and the Dashboard shows a countdown of the days remaining. When the trial ends your subscription renews automatically unless you cancel; if it lapses, the Flyers Pro screen reappears and asks you to subscribe again.
+
+### I subscribed to Flyers Pro but the Flyers Pro screen keeps appearing
+
+- On the Flyers Pro screen, tap **Restore Purchases**.
+- If it still appears, confirm in Settings → Apple ID → Subscriptions that the Flyers Pro subscription is **Active** (not Expired). If it shows Active and Flyers still doesn't see it, force-quit Flyers from the app switcher and reopen.
 
 ### How do I cancel Flyers Pro?
 
