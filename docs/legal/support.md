@@ -78,4 +78,6 @@ Same email. Be specific about the use case.
 
 ## Disclaimer
 
-Flyers is a third-party companion app. It is not affiliated with, endorsed by, or supported by your airline, AIMS International, or Apple. Use the app as a convenience layer over your airline's official tools, not as a replacement for them.
+Flyers is an **independent, unofficial** companion app. It is not affiliated with, endorsed by, or supported by any airline, AIMS International, or Apple. Use it as a convenience layer over your airline's official tools, not as a replacement for them.
+
+Roster data and notifications are **best-effort and may be delayed, incomplete, or unavailable**. The official eCrew portal and your airline's official communications are the authoritative source for your duties, report times, and any roster change — do not rely on Flyers alone for duty awareness. Flyers is provided "as is", without warranty of any kind. To the maximum extent permitted by law, the developer accepts no liability for any missed duty, error, omission, or loss arising from use of the app.

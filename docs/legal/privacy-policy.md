@@ -1,7 +1,7 @@
 # Flyers — Privacy Policy
 
 **Effective date:** 12 May 2026
-**Last updated:** 26 June 2026 (Version 3.0)
+**Last updated:** 28 June 2026 (Version 3.0)
 
 This Privacy Policy describes how the **Flyers** iOS application handles your information. The Flyers app is published by **Capt. Navneet Reddy** (the *Developer*). If you have any questions about this policy, contact **NAV-INT-LLC@pm.me**.
 
@@ -31,7 +31,7 @@ This data never leaves your device. It is not sent to the Developer, to any thir
 
 ### 2.2 In your airline's eCrew portal
 
-The Flyers app talks to the AIMS eCrew web portal operated by your airline (e.g. `ecrew.etihad.ae` for Etihad pilots). When you sign in, the app authenticates against that portal and fetches your own roster, dashboard, and flight details. This is the same data your airline would let you see by signing into the portal in a web browser. The Developer does not operate the eCrew portal and cannot see what your airline stores or how long.
+The Flyers app talks to the AIMS eCrew web portal operated by your airline (your airline's own eCrew domain). When you sign in, the app authenticates against that portal and fetches your own roster, dashboard, and flight details. This is the same data your airline would let you see by signing into the portal in a web browser. The Developer does not operate the eCrew portal and cannot see what your airline stores or how long.
 
 ### 2.3 In your iCloud account (only if you use Flyers Social)
 
@@ -101,7 +101,13 @@ Apple operates CloudKit globally and may store your data in any of its data cent
 
 If material changes are needed, the policy will be updated here and the **Last updated** date at the top will change. Continued use of the app after a change constitutes acceptance.
 
-## 11. Contact
+## 11. Disclaimer & limitation of liability
+
+Flyers is an **independent, unofficial** companion app. It is **not affiliated with, endorsed by, or supported by any airline, AIMS International, or Apple**. "eCrew", "AIMS", and any airline names or marks are the property of their respective owners and are used only to describe what the app connects to.
+
+Roster data and notifications are **best-effort and may be delayed, incomplete, or unavailable**. The official eCrew portal and your airline's official communications are the **authoritative source** for your duties, report times, and any roster change — do not rely on Flyers alone for duty awareness. Flyers is provided **"as is", without warranty of any kind**. To the maximum extent permitted by law, the Developer accepts **no liability** for any missed duty, error, omission, or loss arising from use of the app.
+
+## 12. Contact
 
 **Capt. Navneet Reddy**
 **NAV-INT-LLC@pm.me**
