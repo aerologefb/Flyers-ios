@@ -49,13 +49,8 @@ header.site {
 header.site .logo {
   width: 34px; height: 34px;
   border-radius: 8px;
-  background: var(--accent);
-  color: white;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  object-fit: cover;
+  display: block;
 }
 header.site h1.brand {
   font-size: 18px;

@@ -7,11 +7,13 @@
   <meta name="description" content="Flyers iOS app — support and FAQ. Common questions, troubleshooting, and how to reach the developer.">
   <title>Support — Flyers</title>
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" type="image/png" href="../../icon.png">
+  <link rel="apple-touch-icon" href="../../icon.png">
 </head>
 <body>
   <div class="container">
     <header class="site">
-      <div class="logo">F</div>
+      <img class="logo" src="../../icon.png" alt="Flyers app icon" width="34" height="34">
       <h1 class="brand">Flyers</h1>
       <nav>
         <a href="../../">Home</a>
@@ -77,6 +79,17 @@
         Roster or Dashboard to force a fresh fetch.
       </p>
 
+      <h3>How reliable are roster-change alerts? Can I rely on them?</h3>
+      <p>
+        Treat them as a convenience, <strong>not</strong> as your primary duty-awareness tool. Flyers does
+        not receive live pushes from eCrew — it checks in the background when iOS permits and sends a local
+        notification when it spots a change. Because iOS limits background activity, an alert can be
+        <strong>delayed or missed</strong> — for example if you force-quit Flyers, turn off Background App
+        Refresh, enable Low Power Mode, or your phone is offline. <strong>Always confirm your duties, report
+        times and any change on the official eCrew portal — it is the authoritative source.</strong> The
+        most reliable way to see the latest is to open Flyers and pull-to-refresh.
+      </p>
+
       <h3>Flyers Social — my friend can't find my handle</h3>
       <ul>
         <li>Confirm you're both signed into iCloud on your devices.</li>
@@ -134,9 +147,17 @@
 
       <h2>Disclaimer</h2>
       <p>
-        Flyers is a third-party companion app. It is not affiliated with, endorsed by, or supported
-        by your airline, AIMS International, or Apple. Use the app as a convenience layer over your
-        airline's official tools, not as a replacement for them.
+        Flyers is an <strong>independent, unofficial</strong> companion app. It is not affiliated with,
+        endorsed by, or supported by any airline, AIMS International, or Apple. Use it as a
+        convenience layer over your airline's official tools, not as a replacement for them.
+      </p>
+      <p>
+        Roster data and notifications are <strong>best-effort and may be delayed, incomplete, or
+        unavailable</strong>. The official eCrew portal and your airline's official communications are the
+        authoritative source for your duties, report times, and any roster change — do not rely on Flyers
+        alone for duty awareness. Flyers is provided &ldquo;as is&rdquo;, without warranty of any kind. To
+        the maximum extent permitted by law, the developer accepts no liability for any missed duty, error,
+        omission, or loss arising from use of the app.
       </p>
     </main>
 
