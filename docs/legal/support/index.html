@@ -24,72 +24,31 @@
 
     <main>
       <h1 class="page-title">Support &amp; FAQ</h1>
-      <p class="meta">
-        Contact: <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> · Developer: Capt. Navneet Reddy
-      </p>
-
-      <p>
-        The fastest way to get help is to email <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> with:
-      </p>
-      <ol>
-        <li>The version + build number, shown at the top of the <strong>About</strong> screen (Hub tab → About).</li>
-        <li>Your device model and iOS version (Settings → General → About).</li>
-        <li>A description of what you tried, what you expected, and what you saw instead.</li>
-        <li>Screenshots if useful.</li>
-      </ol>
+      <p><strong>Contact:</strong> <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> <strong>Developer:</strong> Capt. Navneet Reddy</p>
+      <p>The fastest way to get help is to email <strong>NAV-INT-LLC@pm.me</strong> with:</p>
+      <p>1. The version + build number, shown at the top of the <strong>About</strong> screen (Hub tab → About).</p>
+      <p>2. Your device model and iOS version (Settings → General → About).</p>
+      <p>3. A description of what you tried, what you expected, and what you saw instead.</p>
+      <p>4. Screenshots if useful.</p>
       <p>Most replies arrive within <strong>2–3 business days</strong>.</p>
-
       <hr>
-
       <h2>FAQ</h2>
-
       <h3>I forgot my password / I'm locked out of eCrew</h3>
-      <p>
-        Flyers does not control your airline's eCrew portal. Use the <strong>Forgot password</strong>
-        link on the login screen — Flyers will hand off to your airline's password reset flow.
-        If that fails, contact your airline's crew control or eCrew helpdesk.
-      </p>
-
+      <p>Flyers does not control your airline's eCrew portal. Use the <strong>Forgot password</strong> link on the login screen — Flyers will hand off to your airline's password reset flow. If that fails, contact your airline's crew control or eCrew helpdesk.</p>
       <h3>My roster looks wrong</h3>
-      <p>
-        Flyers shows whatever your airline's eCrew portal returns. If a flight, layover, or time
-        is wrong in Flyers, <strong>first check the eCrew web portal in a browser</strong>. If the data is
-        wrong there, it's an issue for your airline's roster team. If it's correct on the web but
-        wrong in Flyers, email support with a screenshot of both.
-      </p>
-
+      <p>Flyers shows whatever your airline's eCrew portal returns. If a flight, layover, or time is wrong in Flyers, <strong>first check the eCrew web portal in a browser</strong>. If the data is wrong there, it's an issue for your airline's roster team. If it's correct on the web but wrong in Flyers, email support with a screenshot of both.</p>
       <h3>My duty times look an hour off</h3>
-      <p>
-        Flyers fetches all times in UTC and converts to your selected display zone.
-        <strong>Hub → Settings → Time zone</strong> lets you pick between local, base, and UTC.
-        Make sure your iPhone's system time zone (Settings → General → Date &amp; Time) is set to
-        Automatic — the app uses this as the "local" reference.
-      </p>
-
+      <p>Flyers fetches all times in UTC and converts to your selected display zone. <strong>Hub → Settings → Time zone</strong> lets you pick between local, base, and UTC. Make sure your iPhone's system time zone (Settings → General → Date &amp; Time) is set to Automatic — the app uses this as the "local" reference.</p>
       <h3>Face ID isn't working</h3>
-      <p>
-        Hub → Settings → Security → toggle off and on. If still failing, sign out (Hub → Sign out)
-        and sign in once with your password — Flyers re-binds your credentials in the iOS Keychain.
-      </p>
-
+      <p>Hub → Settings → Security → toggle off and on. If still failing, sign out (Hub → Sign out) and sign in once with your password — Flyers re-binds your credentials in the iOS Keychain.</p>
       <h3>My background sync isn't running</h3>
-      <p>
-        iOS schedules background refresh at its own discretion based on app usage and battery state.
-        There is no manual override Apple permits. Open Flyers manually and pull-to-refresh on the
-        Roster or Dashboard to force a fresh fetch.
-      </p>
-
-      <h3>How reliable are roster-change alerts? Can I rely on them?</h3>
-      <p>
-        Treat them as a convenience, <strong>not</strong> as your primary duty-awareness tool. Flyers does
-        not receive live pushes from eCrew — it checks in the background when iOS permits and sends a local
-        notification when it spots a change. Because iOS limits background activity, an alert can be
-        <strong>delayed or missed</strong> — for example if you force-quit Flyers, turn off Background App
-        Refresh, enable Low Power Mode, or your phone is offline. <strong>Always confirm your duties, report
-        times and any change on the official eCrew portal — it is the authoritative source.</strong> The
-        most reliable way to see the latest is to open Flyers and pull-to-refresh.
-      </p>
-
+      <p>iOS schedules background refresh at its own discretion based on app usage and battery state. There is no manual override Apple permits. Open Flyers manually and pull-to-refresh on the Roster or Dashboard to force a fresh fetch.</p>
+      <h3>How do notifications work in Flyers 3.0.6?</h3>
+      <p>After your first crew sign-in, Flyers shows a one-time prompt asking whether to enable notifications. You can turn them on or off there, and change the choice later in <strong>Hub → Settings → Notifications</strong> or in iOS Settings → Notifications → Flyers.</p>
+      <p>Standard app notifications — report reminders, crew-mail alerts, and local roster-change alerts — are generated by your iPhone from the latest roster data it has synced. Optional <strong>Server eCrew monitoring</strong> is separate and off by default; if you explicitly enable it in Settings, the Flyers Roster Watcher can send a signal-only roster-change push, then the app refreshes eCrew locally and computes What's Changed on your iPhone when you open the notification.</p>
+      <p>All notifications are best-effort. Always verify duties and report times on the official eCrew portal and through official airline communications.</p>
+      <h3>Does Flyers track my location?</h3>
+      <p>No. Flyers includes a location purpose string for App Store review because the app links map/location-capable Apple frameworks and shows duty routes, airport context, and layover information on maps. Flyers does not track live location, store location history, or send your device location to the Developer, Roster Watcher, OneSignal, Cloudflare, analytics, or advertisers.</p>
       <h3>Flyers Social — my friend can't find my handle</h3>
       <ul>
         <li>Confirm you're both signed into iCloud on your devices.</li>
@@ -97,68 +56,33 @@
         <li>Search is case-insensitive but spelling-exact — <code>nav_reddy</code> will not find <code>navreddy</code>.</li>
         <li>If you previously toggled <strong>Settings → Flyers Social → Hide me from search</strong>, friends can't search for you.</li>
       </ul>
-
       <h3>Flyers Social — my friend's roster isn't updating</h3>
-      <p>
-        Your friend's roster is republished when <strong>their</strong> device performs a background
-        sync (roughly every few hours, controlled by iOS). The "Pull to refresh" gesture on your
-        view of their roster only refreshes the receive side; it doesn't force them to republish.
-      </p>
-
+      <p>Your friend's roster is republished when <strong>their</strong> device performs a background sync (roughly every few hours, controlled by iOS). The "Pull to refresh" gesture on your view of their roster only refreshes the receive side; it doesn't force them to republish.</p>
       <h3>What is Flyers Pro, and what happens after the free trial?</h3>
-      <p>
-        Flyers Pro unlocks the whole app — roster, flights, stats, expiry, crew mail,
-        fit-for-duty, pay estimate, logbook, and cross-airline roster sharing. New users get a
-        <strong>7-day free trial</strong>, and the Dashboard shows a countdown of the days
-        remaining. When the trial ends your subscription renews automatically unless you cancel;
-        if it lapses, the Flyers Pro screen reappears and asks you to subscribe again.
-      </p>
-
+      <p>Flyers Pro unlocks the whole app — roster, flights, stats, expiry, crew mail, fit-for-duty, pay estimate, logbook, and cross-airline roster sharing. New users get a <strong>7-day free trial</strong>, and the Dashboard shows a countdown of the days remaining. When the trial ends your subscription renews automatically unless you cancel; if it lapses, the Flyers Pro screen reappears and asks you to subscribe again.</p>
       <h3>I subscribed to Flyers Pro but the Flyers Pro screen keeps appearing</h3>
       <ul>
         <li>On the Flyers Pro screen, tap <strong>Restore Purchases</strong>.</li>
         <li>If it still appears, confirm in Settings → Apple ID → Subscriptions that the Flyers Pro subscription is <strong>Active</strong> (not Expired). If it shows Active and Flyers still doesn't see it, force-quit Flyers from the app switcher and reopen.</li>
       </ul>
-
       <h3>How do I cancel Flyers Pro?</h3>
-      <p>
-        Settings → Apple ID → Subscriptions → Flyers Pro → Cancel Subscription. Apple handles all
-        subscription billing — the Developer cannot cancel for you.
-      </p>
-
+      <p>Settings → Apple ID → Subscriptions → Flyers Pro → Cancel Subscription. Apple handles all subscription billing — the Developer cannot cancel for you.</p>
       <h3>I want to delete all my Flyers data</h3>
       <ul>
         <li><strong>Local on-device data:</strong> sign out (Hub → Sign out), then uninstall the app.</li>
+        <li><strong>Notifications:</strong> Hub → Settings → Notifications, or iOS Settings → Notifications → Flyers.</li>
+        <li><strong>Server eCrew monitoring:</strong> Hub → Settings → Server eCrew monitoring → Disable server monitoring.</li>
         <li><strong>CloudKit / Flyers Social data:</strong> Hub → Settings → Flyers Social → <strong>Delete my Flyers Social data</strong>. This revokes shares with friends and deletes the records owned by your handle.</li>
         <li><strong>Subscription:</strong> Settings → Apple ID → Subscriptions → cancel.</li>
       </ul>
-
       <h3>How do I report a bug?</h3>
-      <p>
-        Email <a href="mailto:NAV-INT-LLC@pm.me">NAV-INT-LLC@pm.me</a> with the info at the top of
-        this page. Please include exact steps to reproduce — even a one-line "tap X, then Y" is
-        enormously useful.
-      </p>
-
+      <p>Email <strong>NAV-INT-LLC@pm.me</strong> with the info at the top of this page. Please include exact steps to reproduce — even a one-line "tap X, then Y" is enormously useful.</p>
       <h3>How do I request a feature?</h3>
       <p>Same email. Be specific about the use case.</p>
-
       <hr>
-
       <h2>Disclaimer</h2>
-      <p>
-        Flyers is an <strong>independent, unofficial</strong> companion app. It is not affiliated with,
-        endorsed by, or supported by any airline, AIMS International, or Apple. Use it as a
-        convenience layer over your airline's official tools, not as a replacement for them.
-      </p>
-      <p>
-        Roster data and notifications are <strong>best-effort and may be delayed, incomplete, or
-        unavailable</strong>. The official eCrew portal and your airline's official communications are the
-        authoritative source for your duties, report times, and any roster change — do not rely on Flyers
-        alone for duty awareness. Flyers is provided &ldquo;as is&rdquo;, without warranty of any kind. To
-        the maximum extent permitted by law, the developer accepts no liability for any missed duty, error,
-        omission, or loss arising from use of the app.
-      </p>
+      <p>Flyers is an <strong>independent, unofficial</strong> companion app. It is not affiliated with, endorsed by, or supported by any airline, AIMS International, or Apple. Use it as a convenience layer over your airline's official tools, not as a replacement for them.</p>
+      <p>Roster data and notifications are <strong>best-effort and may be delayed, incomplete, or unavailable</strong>. The official eCrew portal and your airline's official communications are the authoritative source for your duties, report times, and any roster change — do not rely on Flyers alone for duty awareness. Flyers is provided "as is", without warranty of any kind. To the maximum extent permitted by law, the developer accepts no liability for any missed duty, error, omission, or loss arising from use of the app.</p>
     </main>
 
     <footer class="site">
