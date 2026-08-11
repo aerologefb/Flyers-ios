@@ -1,7 +1,7 @@
 # Flyers — Privacy Policy
 
 **Effective date:** 12 May 2026
-**Last updated:** 8 July 2026 (Version 4.2 — app version 3.0.6)
+**Last updated:** 11 August 2026 (Version 4.3 — app version 3.3.0)
 
 This Privacy Policy describes how the **Flyers** iOS application handles your information. The Flyers app is published by **Capt. Navneet Reddy** (the *Developer*). If you have questions, contact **NAV-INT-LLC@pm.me**.
 

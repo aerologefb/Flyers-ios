@@ -36,7 +36,7 @@ Hub → Settings → Security → toggle off and on. If still failing, sign out 
 
 iOS schedules background refresh at its own discretion based on app usage and battery state. There is no manual override Apple permits. Open Flyers manually and pull-to-refresh on the Roster or Dashboard to force a fresh fetch.
 
-### How do notifications work in Flyers 3.0.6?
+### How do notifications work in Flyers 3.3?
 
 After your first crew sign-in, Flyers shows a one-time prompt asking whether to enable notifications. You can turn them on or off there, and change the choice later in **Hub → Settings → Notifications** or in iOS Settings → Notifications → Flyers.
 
