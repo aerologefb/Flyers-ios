@@ -31,8 +31,7 @@
       <h2>One-liner</h2>
       <p>
         <em>The crew companion for AIMS eCrew pilots and cabin crew. Roster, logbook, fatigue
-        tracker, layover map, and opt-in roster sharing with your colleagues — all on your iPhone,
-        all private.</em>
+        tracker, layover map, opt-in sharing, and optional server roster-change alerts.</em>
       </p>
 
       <h2>The app</h2>
@@ -65,6 +64,19 @@
         individual events from anyone you don't want to share with. End-to-end via Apple's
         CloudKit — no third-party server, no analytics, no telemetry.
       </p>
+      <h3>Optional server roster-change alerts</h3>
+      <p>
+        Flyers can still work fully on-device: open the app or pull-to-refresh to fetch the latest
+        eCrew roster. If a crew member explicitly enables server eCrew monitoring, the Flyers Roster
+        Watcher checks eCrew periodically and sends a signal-only push when it detects a roster
+        change. Opening the push refreshes eCrew on the iPhone, computes the exact What&apos;s Changed
+        diff locally, and opens the review sheet.
+      </p>
+      <p>
+        The server push does not contain roster details, duty times, hotel data, raw eCrew content,
+        cookies, or credentials. Roster alerts remain best-effort; the official eCrew portal remains
+        the source of truth.
+      </p>
       <h3>New in 3.0</h3>
       <p>
         A complete redesign — a luminous, light "flight-deck at dawn" theme with a
@@ -77,9 +89,10 @@
         Flyers is built around a single principle: the Developer cannot read your data.
       </p>
       <ul>
-        <li>Credentials are stored only in the iOS Keychain on the user's device.</li>
+        <li>By default, credentials are stored only in the iOS Keychain on the user's device.</li>
         <li>Roster and logbook data are cached locally via SwiftData.</li>
-        <li>Social features run on Apple's CloudKit; the Developer operates no server.</li>
+        <li>Optional server eCrew monitoring is off by default, consent-gated, encrypted at rest, and sends signal-only push alerts.</li>
+        <li>Social features run on Apple's CloudKit.</li>
         <li>No analytics, no third-party SDKs, no telemetry, no advertising.</li>
       </ul>
       <p>
@@ -96,7 +109,7 @@
       <ul>
         <li>Native iOS 26+, Swift 6 strict concurrency, SwiftUI, Liquid Glass design system.</li>
         <li>CloudKit for the Social subsystem; StoreKit 2 for subscriptions.</li>
-        <li>No third-party dependencies beyond Apple SDKs.</li>
+        <li>OneSignal is used only for user-visible roster-change push delivery when notifications/server monitoring are enabled.</li>
         <li>Source: closed; verification: pre-launch sandbox testing on real devices.</li>
       </ul>
 

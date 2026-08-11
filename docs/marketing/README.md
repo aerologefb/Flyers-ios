@@ -12,7 +12,7 @@
 
 ## One-liner (≤170 chars)
 
-> The crew companion for AIMS eCrew pilots and cabin crew. Roster, logbook, fatigue tracker, layover map, and opt-in roster sharing with your colleagues — all on your iPhone, all private.
+> The crew companion for AIMS eCrew pilots and cabin crew. Roster, logbook, fatigue tracker, layover map, opt-in sharing, and optional server roster-change alerts.
 
 ## Long description (App Store body, ≤4000 chars)
 
@@ -33,17 +33,23 @@ Sign in once with your eCrew credentials and Flyers caches your full schedule on
 - **Crew Mail** — Read-only mirror of your eCrew inbox.
 - **Live Activities** — Next-duty countdown on the Lock Screen and Dynamic Island.
 
+**Optional server roster-change alerts**
+
+Flyers can still work fully on-device: open the app or pull-to-refresh to fetch the latest eCrew roster. If you explicitly enable server eCrew monitoring, the Flyers Roster Watcher checks eCrew periodically and sends a signal-only push when it detects a roster change. Opening the push refreshes eCrew on your iPhone, computes the exact What's Changed diff locally, and opens the review sheet.
+
+The server push does not contain roster details, duty times, hotel data, raw eCrew content, cookies, or credentials. Roster alerts remain best-effort; the official eCrew portal remains the source of truth.
+
 **Flyers Social (Optional, Premium)**
 
 Share your roster with the colleagues who matter to you — pilot, crew, friend, partner — even when they fly for a different airline. Cross-airline, opt-in, and entirely private. Add friends by their public `@handle`, accept or block as you choose, and hide individual events from anyone you don't want to share with.
 
-End-to-end via Apple's CloudKit. Your data never sits on a third-party server — only iCloud and your accepted friends can see it.
+End-to-end via Apple's CloudKit. Only iCloud and your accepted friends can see roster events you choose to publish.
 
 **Flyers Pro** unlocks the full Flyers app — your roster, flight detail, stats & FTL, expiry tracking, crew mail, fit-for-duty, pay estimate, fatigue tracker, logbook, and Flyers Social roster sharing. **$2.99/month or $19.99/year, with a 7-day free trial.** Cancel anytime. New in 3.0: a complete luminous redesign (ALTITUDE) and in-app Report Fit for Duty.
 
 **Privacy first**
 
-Flyers talks only to your airline's eCrew portal and to your own iCloud. No analytics, no third-party SDKs, no telemetry, no advertising. Your credentials live in the iOS Keychain on your device only. Read the full privacy policy in the app.
+No analytics, no telemetry, no advertising. By default your eCrew credentials live in the iOS Keychain on your device only. Optional server eCrew monitoring is off by default, requires explicit consent, stores credentials encrypted, and sends signal-only roster-change pushes; exact roster changes are fetched and computed locally on your iPhone. Read the full privacy policy in the app.
 
 **Built for crew, by crew. iOS 26+.**
 
@@ -83,7 +89,7 @@ Located at `FlyersIOS/Resources/Assets.xcassets/AppIcon.appiconset/`. Already at
 
 ## Promo text (App Store, ≤170 chars, editable without resubmitting)
 
-> Cross-airline roster sharing has landed. Add any Flyers user as a friend — opt-in, private, free to read, Premium to publish. CloudKit-backed end-to-end.
+> Optional server roster-change alerts are here: signal-only push when eCrew changes, then exact What's Changed review computed locally on your iPhone.
 
 ## Press contact
 
