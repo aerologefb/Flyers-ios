@@ -57,12 +57,19 @@
         on a third-party server.
       </p>
 
-      <h2>New in 3.3.0</h2>
+      <h2>New in 3.3.2</h2>
       <p>
-        A <strong>Today roster widget</strong> for your Home Screen — report time, flights,
-        standby windows and days off at a glance, plus a first look at tomorrow. Flight detail
-        now shows <strong>scheduled vs actual times</strong> with delay chips once a sector has
-        flown, your <strong>own eCrew photo</strong> in the crew list,
+        You can now <strong>redeem an offer code</strong> straight from the subscription
+        screen, and when the App Store cannot load the plans or a purchase or restore does
+        not complete, Flyers tells you why on the screen instead of appearing to do nothing.
+        Plus everything from 3.3.1: enabling optional server eCrew monitoring no longer
+        stalls waiting for a push token, all nine airlines in the picker show their confirmed
+        AIMS eCrew login profile (Etihad remains the only one verified end-to-end with a live
+        crew account — the rest stay tagged <strong>"not live verified"</strong>), and the
+        privacy wording spells out exactly when credentials leave your iPhone (only via the
+        separate, explicit server-monitoring consent flow). And from 3.3.0: the
+        <strong>Today roster widget</strong>, <strong>scheduled vs actual times</strong>
+        with delay chips, your <strong>own eCrew photo</strong> in the crew list,
         <strong>public-holiday markers</strong> and a day-symbol legend on the roster grid, and
         your <strong>fit-for-duty history</strong> under Hub.
       </p>
@@ -88,7 +95,8 @@
       <p>
         Flyers is an <strong>independent, unofficial</strong> app — not affiliated with, endorsed by, or
         supported by any airline, AIMS International, or Apple. It reads your own eCrew
-        data using your credentials, which never leave your device.
+        data using credentials stored in the iOS Keychain. They leave the device only if you separately
+        enable optional server eCrew monitoring after the explicit Settings consent flow.
       </p>
       <p>
         Roster data and notifications are <strong>best-effort</strong>. iOS limits how often the app can
@@ -106,9 +114,10 @@
 
       <h2>Privacy first</h2>
       <p>
-        Flyers talks only to your airline's eCrew portal and to your own iCloud. No analytics,
-        no third-party SDKs, no telemetry, no advertising. Your credentials live in the iOS
-        Keychain on your device only.
+        By default, Flyers talks to your airline's eCrew portal and Apple's services. OneSignal
+        is used only for opt-in push delivery. Optional server eCrew monitoring is separate and
+        explicit; it sends the minimum encrypted credentials and device identifiers needed by
+        the Roster Watcher. No analytics, telemetry, advertising, or tracking.
       </p>
 
       <div class="cards">

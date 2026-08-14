@@ -45,7 +45,7 @@ Share your roster with the colleagues who matter to you — pilot, crew, friend,
 
 End-to-end via Apple's CloudKit. Only iCloud and your accepted friends can see roster events you choose to publish.
 
-**Flyers Pro** unlocks the full Flyers app — your roster, flight detail, stats & FTL, expiry tracking, crew mail, fit-for-duty, pay estimate, fatigue tracker, logbook, and Flyers Social roster sharing. **$2.99/month or $19.99/year, with a 7-day free trial.** Cancel anytime. New in 3.3.0: a Today roster Home-Screen widget, scheduled vs actual flight times with delay chips, your own crew photo in Flight detail, roster public-holiday markers with a day-symbol legend, and fit-for-duty history.
+**Flyers Pro** unlocks the full Flyers app — your roster, flight detail, stats & FTL, expiry tracking, crew mail, fit-for-duty, pay estimate, fatigue tracker, logbook, and Flyers Social roster sharing. **$2.99/month or $19.99/year, with a 7-day free trial.** Cancel anytime. New in 3.3.2: redeem an offer code without leaving the subscription screen, and clearer messages when the App Store cannot load the plans or complete a purchase — on top of 3.3.1's server-monitoring setup fix, honest "not live verified" labels on all eight carriers beyond Etihad and clearer privacy wording, and 3.3.0's Today roster Home-Screen widget, scheduled vs actual flight times with delay chips, your own crew photo in Flight detail, roster public-holiday markers with a day-symbol legend, and fit-for-duty history.
 
 **Privacy first**
 
