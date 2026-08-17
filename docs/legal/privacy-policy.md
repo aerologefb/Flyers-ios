@@ -1,11 +1,11 @@
 # Flyers — Privacy Policy
 
 **Effective date:** 12 May 2026
-**Last updated:** 11 August 2026 (Version 4.3 — app version 3.3.0)
+**Last updated:** 17 August 2026 (Version 4.4 — app version 3.3.2)
 
 This Privacy Policy describes how the **Flyers** iOS application handles your information. The Flyers app is published by **Capt. Navneet Reddy** (the *Developer*). If you have questions, contact **NAV-INT-LLC@pm.me**.
 
-This policy exists to be plain, short, and honest. The summary is: **Flyers is a personal companion app for airline crew. It runs on your device, talks to your airline's eCrew portal and Apple's iCloud, and collects no analytics. By default, the Developer cannot read your eCrew credentials or on-device roster cache. Push notifications are opt-in: after your first sign-in Flyers shows a one-time prompt explaining notifications and letting you turn them on or off, and you can change this later in Settings. If you explicitly opt into server-side eCrew monitoring, Flyers sends only the minimum credentials and device identifiers needed for that monitoring to the Flyers Roster Watcher so it can check for roster changes and send signal-only push notifications. Exact What's Changed details are still fetched and computed locally on your iPhone when you open the notification. Flyers uses maps only to show duty routes, airport context, and layover information — it does not track your location. If you opt into Flyers Social, roster events you publish are stored in Apple's CloudKit Public Database and are intended to be visible only to accepted friends in the app.**
+This policy exists to be plain, short, and honest. The summary is: **Flyers is a personal companion app for airline crew. It runs on your device, talks to your airline's eCrew portal and Apple's iCloud, and collects no analytics. By default, the Developer cannot read your eCrew credentials or on-device roster cache. Push notifications are opt-in: after your first sign-in Flyers shows a one-time prompt explaining notifications and letting you turn them on or off, and you can change this later in Settings. If you explicitly opt into server-side eCrew monitoring, Flyers sends only the minimum credentials and device identifiers needed for that monitoring to the Flyers Roster Watcher so it can check for roster changes and send signal-only push notifications. Exact What's Changed details are still fetched and computed locally on your iPhone when you open the notification. Flyers uses maps only to show duty routes, airport context, and layover information — it does not track your location. If you opt into Flyers Social, roster events you publish are stored in Apple's CloudKit Public Database and are intended to be visible only to accepted friends in the app. Flyers also reads your own eCrew privacy setting and, if it says other crew may not see your schedule, will not publish your roster to your Flyers friends unless you separately choose to share it with them.**
 
 ---
 
@@ -49,6 +49,8 @@ You can disable monitoring from Settings at any time; Flyers asks the backend to
 
 The Flyers app talks to the AIMS eCrew web portal operated by your airline (your airline's own eCrew domain). When you sign in, the app authenticates against that portal and fetches your own roster, dashboard, and flight details. This is the same data your airline would let you see by signing into the portal in a web browser. The Developer does not operate the eCrew portal and cannot see what your airline stores or how long.
 
+Flyers also reads your own **Preferences** page on the portal — specifically your airline's "Allow other crew to access" settings — so the app can honour your stated preference about who may see your schedule. This is read-only: Flyers never changes any setting in eCrew. The result is kept on your device and is not sent to the Developer, the Roster Watcher, or anyone else.
+
 ### 2.4 In your iCloud account (only if you use Flyers Social)
 
 If you choose to enable **Flyers Social** — the optional feature that lets you share your roster with other Flyers users — the following data is stored in **your iCloud account** via Apple's CloudKit:
@@ -60,6 +62,8 @@ If you choose to enable **Flyers Social** — the optional feature that lets you
 | The roster events you publish to friends | Public Database (`SharedRoster`) | Intended to be shown only to accepted friends listed in the record's `viewableBy` field. The app checks that list before rendering the roster. |
 
 These records sit in Apple's CloudKit container (`iCloud.com.navintllc.flyers.ios`). Apple operates this infrastructure. Because Flyers Social uses CloudKit Public Database records for roster sharing, roster payloads are not a substitute for regulatory roster systems and should be considered shared data once you opt into publishing.
+
+If your airline's eCrew profile says that other crew may **not** see your schedule, Flyers does not publish your roster to your Flyers friends either. Because your airline's setting applies to everyone at your airline while Flyers sharing applies only to friends you have personally accepted, you may separately choose in Flyers to share with those friends. That choice is yours, is made in the app, and never alters your eCrew setting. If Flyers cannot read the setting — you are offline, or the portal is unreachable — it continues to behave as it did before, and does not treat an unknown answer as permission withdrawn.
 
 You can stop using Flyers Social at any time. **Settings → Flyers Social → Delete my Flyers Social data** deletes your published `SharedRoster` record and clears the local handle state on this device.
 
